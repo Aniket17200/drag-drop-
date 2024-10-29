@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useRef } from "react";
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
+import Sidebar from "./Sidebar";
+import PreviewArea from "./PreviewArea";
+import Header from "./Header";
+import Footer from "./Footer";
+import SidePanel from "./SidePanel";
+import { Si1Panel } from "react-icons/si";
 
 function App() {
+  const previewAreaRef = useRef();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header
+        onUndo={() => previewAreaRef.current.handleUndo()}
+        onRedo={() => previewAreaRef.current.handleRedo()}
+      />
+      <DndProvider backend={HTML5Backend}>
+        <div className="flex flex-col h-screen">
+          <div className="flex flex-grow gap-5">
+            <Sidebar />
+            <PreviewArea ref={previewAreaRef} />
+          </div>
+           <SidePanel/>
+          <Footer />
+        </div>
+      </DndProvider>
+    </>
   );
 }
 
