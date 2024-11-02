@@ -6,7 +6,7 @@ import PreviewArea from "./PreviewArea";
 import Header from "./Header";
 import Footer from "./Footer";
 import SidePanel from "./SidePanel";
-import { Si1Panel } from "react-icons/si";
+
 
 function App() {
   const previewAreaRef = useRef();
