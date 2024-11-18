@@ -150,6 +150,7 @@ function Sidebar() {
                 <DraggableItem type="card" icon={<FaImages />} variant="Card" />
                 <DraggableItem type="card" icon={<FaGlobe />} variant="Card1" />
                 <DraggableItem type="card" icon={<FaStore />} variant="Card2" />
+                <DraggableItem type="card" icon={<FaStore />} variant="Card4WithStyles" />
               </div>
             )}
           </div>

@@ -5,7 +5,7 @@ export default function Navbar1({
   logoSrc = 'https://flowbite.com/docs/images/logo.svg',
   logoText = 'Your Logo',
   links = [
-    { name: 'Home', href: '#home', current: true },
+    { name: 'Home', href: '#home'},
     { name: 'About', href: '#about' },
     { name: 'Services', href: '#services' },
     { name: 'Contact', href: '#contact' },

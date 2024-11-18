@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar';
+
 
 const SidePanel = ({ navbarData, onNavbarUpdate }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -86,12 +86,7 @@ const SidePanel = ({ navbarData, onNavbarUpdate }) => {
         </div>
       </div>
 
-      <Navbar
-        logoText={logoText}
-        logoSrc={logoSrc}
-        searchPlaceholder={searchPlaceholder}
-        links={links}
-      />
+      
     </div>
   );
 };

@@ -5,7 +5,7 @@ import { faHome, faInfoCircle, faCog, faEnvelope } from '@fortawesome/free-solid
 export default function Navbar3({
   logoText = 'Logo',
   menuItems = [
-    { label: 'Home', href: '#', icon: faHome, current: true },
+    { label: 'Home', href: '#Home', icon: faHome},
     { label: 'About', href: '#About', icon: faInfoCircle },
     { label: 'Services', href: '#Services', icon: faCog },
     { label: 'Contact', href: '#Contact', icon: faEnvelope },

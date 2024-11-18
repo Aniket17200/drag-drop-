@@ -10,6 +10,7 @@ import Navbar3 from "./Navbar3";
 import Card from "./Card";
 import Card1 from "./Card1";
 import Card2 from "./Card2";
+import Card4WithStyles from "./Card4WithStyles";
 import Hero from "./Hero";
 import Dropdown from "./Dropdowns/Dropdown";
 import Dropdown2 from "./Dropdowns/Dropdown2";
@@ -109,6 +110,7 @@ const PreviewArea = forwardRef((props, ref) => {
       Card: Card,
       Card1: Card1,
       Card2: Card2,
+      Card4WithStyles: Card4WithStyles,
       Hero: Hero,
       Dropdown2 : Dropdown2,
       Dropdown3 : Dropdown3,
